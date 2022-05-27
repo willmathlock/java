@@ -1,9 +1,10 @@
 package com.br.willmathlock.cadastroveiculo.model;
+
+import javax.persistence.*;
 import java.math.BigDecimal;
-import java.time.ZonedDateTime;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
-import javax.persistence.*;
 
 @Entity
 @Table(name = "veiculo")
@@ -26,6 +27,20 @@ public class Veiculo {
     @Column(name = "dataCadastro", nullable = false)
     private Date dataCadastro;
 
+    @Lob
+    private String especificacoes;
+    @Column(name = "tipoCombustivel", nullable = true)
+    @Enumerated(EnumType.STRING)
+    private tipoCombustivel combustivel;
+
+    public String getEspecificacoes () {
+        return especificacoes;
+    }
+
+    public void setEspecificacoes (String especificacoes) {
+        this.especificacoes = especificacoes;
+    }
+
     public Date getDataCadastro () {
         return dataCadastro;
     }
@@ -33,17 +48,6 @@ public class Veiculo {
     public void setDataCadastro (Date dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
-
-    public enum tipoCombustivel{
-        ALCOOL,
-        GASOLINA,
-        DIESEL,
-        BIOCOMBUSTIVEL
-    }
-
-    @Column(name = "tipoCombustivel", nullable = true)
-    @Enumerated(EnumType.STRING)
-    private tipoCombustivel combustivel;
 
     public tipoCombustivel getCombustivel () {
         return combustivel;
@@ -112,5 +116,12 @@ public class Veiculo {
 
     public void setValor (BigDecimal valor) {
         this.valor = valor;
+    }
+
+    public enum tipoCombustivel {
+        ALCOOL,
+        GASOLINA,
+        DIESEL,
+        BIOCOMBUSTIVEL
     }
 }

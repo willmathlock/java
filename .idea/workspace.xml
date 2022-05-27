@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b317eb44-f543-4f42-88c4-d973ebb467a7" name="Changes" comment="deletando valor">
+    <list default="true" id="b317eb44-f543-4f42-88c4-d973ebb467a7" name="Changes" comment="enum combustivel e data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/br/willmathlock/cadastroveiculo/model/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/willmathlock/cadastroveiculo/model/Veiculo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/br/willmathlock/entitymanager/PersistenceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/willmathlock/entitymanager/PersistenceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/willmathlock/entitymanager/buscandoVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/willmathlock/entitymanager/buscandoVeiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/dados-iniciais.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/dados-iniciais.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653625600809</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="enum combustivel e data">
+      <created>1653664172373</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653664172373</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +188,7 @@
     <MESSAGE value="Usando hibernate API persistencia em java" />
     <MESSAGE value="atualizando valor" />
     <MESSAGE value="deletando valor" />
-    <option name="LAST_COMMIT_MESSAGE" value="deletando valor" />
+    <MESSAGE value="enum combustivel e data" />
+    <option name="LAST_COMMIT_MESSAGE" value="enum combustivel e data" />
   </component>
 </project>
