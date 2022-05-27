@@ -1,14 +1,12 @@
 package com.br.willmathlock.cadastroveiculo.model;
 import java.math.BigDecimal;
+import java.time.ZonedDateTime;
+import java.util.Date;
 import java.util.Objects;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+
 @Entity
-@Table(name = "tab_veiculo")
+@Table(name = "veiculo")
 public class Veiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,12 +15,43 @@ public class Veiculo {
     private String fabricante;
     @Column(length = 60, nullable = false)
     private String modelo;
-    @Column(name = "ano_fabricacao", nullable = false)
+    @Column(name = "anoFabricacao", nullable = false)
     private Integer anoFabricacao;
-    @Column(name = "ano_modelo", nullable = false)
+    @Column(name = "anoModelo", nullable = false)
     private Integer anoModelo;
     @Column(precision = 10, scale = 2, nullable = true)
     private BigDecimal valor;
+
+    @Temporal(TemporalType.DATE)
+    @Column(name = "dataCadastro", nullable = false)
+    private Date dataCadastro;
+
+    public Date getDataCadastro () {
+        return dataCadastro;
+    }
+
+    public void setDataCadastro (Date dataCadastro) {
+        this.dataCadastro = dataCadastro;
+    }
+
+    public enum tipoCombustivel{
+        ALCOOL,
+        GASOLINA,
+        DIESEL,
+        BIOCOMBUSTIVEL
+    }
+
+    @Column(name = "tipoCombustivel", nullable = true)
+    @Enumerated(EnumType.STRING)
+    private tipoCombustivel combustivel;
+
+    public tipoCombustivel getCombustivel () {
+        return combustivel;
+    }
+
+    public void setCombustivel (tipoCombustivel combustivel) {
+        this.combustivel = combustivel;
+    }
 
     @Override
     public boolean equals (Object o) {

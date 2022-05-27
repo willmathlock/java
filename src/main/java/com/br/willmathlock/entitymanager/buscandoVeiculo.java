@@ -35,6 +35,18 @@ public class buscandoVeiculo {
         manager.remove(veiculo);
         tx.commit();
 
+        tx.begin();
+        veiculo.setFabricante("Ford");
+        veiculo.setModelo("Focus");
+        veiculo.setAnoFabricacao(2019);
+        veiculo.setAnoModelo(2020);
+        veiculo.setValor(new BigDecimal(41_500));
+        veiculo.setCombustivel(Veiculo.tipoCombustivel.BIOCOMBUSTIVEL);
+
+        manager.persist(veiculo);
+
+        tx.commit();
+
         manager.close();
         JpaUtil.close();
     }
