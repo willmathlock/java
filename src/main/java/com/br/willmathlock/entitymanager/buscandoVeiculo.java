@@ -29,6 +29,12 @@ public class buscandoVeiculo {
         System.out.println("Novo valor: " + veiculo.getValor());
 
         tx.commit();
+
+        tx.begin();
+        veiculo = manager.find(Veiculo.class, 1L);
+        manager.remove(veiculo);
+        tx.commit();
+
         manager.close();
         JpaUtil.close();
     }
