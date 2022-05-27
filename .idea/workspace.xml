@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b317eb44-f543-4f42-88c4-d973ebb467a7" name="Changes" comment="Usando hibernate API persistencia em java">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/willmathlock/cadastroveiculo/model/Veiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/willmathlock/entitymanager/JpaUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/willmathlock/entitymanager/PersistenceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/willmathlock/entitymanager/buscandoVeiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/createTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/dados-iniciais.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/willmathlock/cadastrocliente/model/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/willmathlock/entitymanager/buscandoVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/willmathlock/entitymanager/buscandoVeiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653621817774</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Usando hibernate API persistencia em java">
+      <created>1653625285772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653625285772</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
